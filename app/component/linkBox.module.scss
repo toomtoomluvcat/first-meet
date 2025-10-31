@@ -1,11 +1,13 @@
 .blog {
   padding: 15px 30px;
+  position: relative;
   border-radius: 20px;
   font-family: "Alumni Sans";
   background-color: var(--blog-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .blog_text {
@@ -33,4 +35,27 @@
     background-color: black;
     border-radius: 100%;
   }
+}
+.blog_avaliable_1 {
+  font-size: 2.4em;
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  white-space: nowrap;
+  transform: rotate(15deg);
+  top: 30px;
+  right: -50px;
+}
+
+.blog_avaliable_2 {
+  font-size: 2.4em;
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  white-space: nowrap;
+  transform: rotate(-15deg);
+  top: 135px;
+  right: -50px;
 }

@@ -16,9 +16,28 @@ function LandingPage() {
     {
       Color: "#74B6A8",
       Title: "PINBOARD",
-      TitleColor: "#FFFFFF",
       Description: "Lorem ipsum dolor sit.",
       Avaliable: true,
+    },
+    {
+      Color: "#F6EDC4",
+      Title: "SHOWCASE",
+      TitleColor: "black",
+      Description: "Lorem ipsum dolor sit.",
+      Avaliable: false,
+    },
+    {
+      Color: "#E5AD58",
+      Title: "EVENT",
+      TitleColor: "black",
+      Description: "Lorem ipsum dolor sit.",
+      Avaliable: true,
+    },
+    {
+      Color: "#DD7751",
+      Title: "OTHER",
+      Description: "Lorem ipsum dolor sit.",
+      Avaliable: false,
     },
   ];
 
@@ -65,27 +84,18 @@ function LandingPage() {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h1>
               </div>
+
               <div className={styles.blog_right}>
-                <LinkBox
-                  Color={linkbox[0].Color}
-                  Title={linkbox[0].Title}
-                  Description={linkbox[0].Description}
-                ></LinkBox>
-                <LinkBox
-                  Color={linkbox[0].Color}
-                  Title={linkbox[0].Title}
-                  Description={linkbox[0].Description}
-                ></LinkBox>
-                <LinkBox
-                  Color={linkbox[0].Color}
-                  Title={linkbox[0].Title}
-                  Description={linkbox[0].Description}
-                ></LinkBox>
-                <LinkBox
-                  Color={linkbox[0].Color}
-                  Title={linkbox[0].Title}
-                  Description={linkbox[0].Description}
-                ></LinkBox>
+                {linkbox.map((item, index) => (
+                  <LinkBox
+                    key={index}
+                    Color={item.Color}
+                    Title={item.Title}
+                    TitleColor={item.TitleColor ?? "white"}
+                    Description={item.Description}
+                    Avaliable={item.Avaliable}
+                  ></LinkBox>
+                ))}
               </div>
             </div>
           </div>

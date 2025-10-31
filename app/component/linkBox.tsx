@@ -29,6 +29,16 @@ function LinkBox({
         <h1>{Title}</h1>
         <p>{Description}</p>
       </div>
+      {!Avaliable && (
+        <div>
+          <div className={styles.blog_avaliable_1}>
+            404 • ERROR • 404 • ERROR • 404 • ERROR •
+          </div>
+          <div className={styles.blog_avaliable_2}>
+            404 • ERROR • 404 • ERROR • 404 • ERROR •
+          </div>
+        </div>
+      )}
       <div className={styles.blog_container_action}>
         <Image
           className={styles.blog_action}
