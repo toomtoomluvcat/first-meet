@@ -1,0 +1,50 @@
+$Retro100: #dd7751;
+
+.landing {
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -50px;
+}
+.welcome_image {
+  height: 280px;
+  margin: 0px auto;
+  width: 100%;
+}
+.content {
+  padding: 15px 30px;
+  position: relative;
+}
+.star {
+  position: absolute;
+  top: -140px;
+  gap: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.blog {
+  font-family: "Alumni Sans";
+  display: grid;
+  gap: 0.3em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.blog_left {
+  font-weight: bold;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 15px;
+  background-color: $Retro100;
+  h1 {
+    width: 50%;
+    font-size: 4em;
+  }
+}
+.blog_right {
+  display: grid;
+  grid-template-rows: repeat(2, 250px);
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3em;
+}
